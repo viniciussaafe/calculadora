@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bhaskara">
+
+        <h1>Calculadora</h1>
+
+        <button onclick="delta()">Calcular Delta</button>
+        <section id="res">
+        <p>o resultado vem aqui ...</p>
+        </section>
+    </div>
+
+    <h2>Calculadora de Harris-Benedict</h2>
+
+    <form id="harrisBenedictForm">
+    Peso (kg): <input type="number" id="weight" name="weight"><br>
+    Altura (cm): <input type="number" id="height" name="height"><br>
+    Idade (anos): <input type="number" id="age" name="age"><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Masculino</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Feminino</label><br>
+    <input type="button" value="Calcular" onclick="calculate()">
+    </form>
+
+    <p id="result"></p>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
